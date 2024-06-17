@@ -33,24 +33,6 @@ document.getElementById("new-book").addEventListener("click", (event) => {
     }
 })
 
-bookName.addEventListener("input", () => {
-    if (bookName.validity.typeMismatch) {
-        bookName.setCustomValidity("Please enter a valid book name!")
-    }
-    else {
-        bookName.setCustomValidity("")
-    }
-})
-
-pageCount.addEventListener("input", () => {
-    if (pageCount.validity.typeMismatch) {
-        pageCount.setCustomValidity("Please enter a valid book name!")
-    }
-    else {
-        pageCount.setCustomValidity("")
-    }
-})
-
 function Book(title, author, pages, read) {
     this.title = title
     this.author = author
