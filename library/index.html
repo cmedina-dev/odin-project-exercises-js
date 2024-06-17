@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+</head>
+<body>
+    <h1>Library Books Demo</h1>
+    <h2>List of Books:</h2>
+    <ul id="library-books"></ul>
+    <button name="show-dialog" id="show-dialog">Add a new book</button>
+    <dialog id="add-book">
+        <form id="new-book-form">
+            <h3>
+                Add a new book:
+            </h3>
+            <div class="book-input">
+                <label for="book-name">
+                    Book name:
+                </label>
+                <input name="book-name" id="book-name" type="text" required />
+            </div>
+            <div class="book-input">
+                <label for="author-name">
+                    Author name:
+                </label>
+                <input name="author-name" id="author-name" type="text" required />
+            </div>
+            <div class="book-input">
+                <label for="page-count">
+                    Page count:
+                </label>
+                <input name="page-count" id="page-count" type="number" required />
+            </div>
+            <div class="book-input">
+                <label for="finished-reading">
+                    Finished reading:
+                </label>
+                <input name="finished-reading" id="finished-reading" type="checkbox" />
+            </div>
+            <footer>
+                <button name="cancel" formmethod="dialog" aria-label="close" formnovalidate>Cancel</button>
+                <button name="new-book" id="new-book" type="submit">Confirm</button>
+            </footer>
+        </form>
+    </dialog>
+    <script src="./library.js"></script>
+</body>
+</html>
