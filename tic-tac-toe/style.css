@@ -1,0 +1,14 @@
+.row {
+    display: flex;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    background-color: grey;
+    border: 1px solid black;
+    line-height: 8px;
+}
