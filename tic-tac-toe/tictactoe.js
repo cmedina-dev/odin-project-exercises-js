@@ -43,7 +43,7 @@ const viewController = (function () {
         playerNamesSection.append(playerName)
     }
     const drawWinner = (winner) => {
-        outcomeText.innerText = `The winner is ${winner.getName()}!`
+        outcomeText.innerText = `The winner is ${winner.getName() ?? winner.getSymbol()}!`
     }
     const drawTie = () => {
         outcomeText.innerText = `It's a tied game!`
